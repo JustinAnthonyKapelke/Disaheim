@@ -16,6 +16,7 @@ namespace Disaheim
         public Level Quality
         {
             get { return quality; }
+            set { quality = value; }
            
         }
 
