@@ -7,16 +7,17 @@ using System.Threading.Tasks;
 
 namespace Disaheim
 {
-    public class Book
+    //Make Book a childclass to the Merchandise parent class
+	public class Book : Merchandise
     {
 		
-		private string itemId;
+		//private string itemId;
 
-		public string ItemId
-		{
-			get { return itemId; }
-			set { itemId = value; }
-		}
+		//public string ItemId
+		//{
+		//	get { return itemId; }
+		//	set { itemId = value; }
+		//}
 
 
 		private string title;
@@ -36,9 +37,8 @@ namespace Disaheim
 			set { price = value; }
 		}
 
-		//Book constructor
-
-		public Book (string itemId, string title, double price)
+        //Book constructor with keyword to call the itemId's constructor from Merchandise Class
+        public Book (string itemId, string title, double price) : base (itemId)	
 		{
 			this.itemId = itemId;
 			this.title = title;

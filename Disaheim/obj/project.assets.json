@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Justin\\Datamatiker\\Kode\\Disaheim\\Disaheim\\Disaheim.csproj",
+      "projectUniqueName": "C:\\Users\\Justin\\Datamatiker\\Programmering\\Kode\\Disaheim\\Disaheim\\Disaheim.csproj",
       "projectName": "Disaheim",
-      "projectPath": "C:\\Users\\Justin\\Datamatiker\\Kode\\Disaheim\\Disaheim\\Disaheim.csproj",
+      "projectPath": "C:\\Users\\Justin\\Datamatiker\\Programmering\\Kode\\Disaheim\\Disaheim\\Disaheim.csproj",
       "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Justin\\Datamatiker\\Kode\\Disaheim\\Disaheim\\obj\\",
+      "outputPath": "C:\\Users\\Justin\\Datamatiker\\Programmering\\Kode\\Disaheim\\Disaheim\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Justin\\AppData\\Roaming\\NuGet\\NuGet.Config",

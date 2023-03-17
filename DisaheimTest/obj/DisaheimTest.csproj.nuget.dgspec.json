@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Justin\\Datamatiker\\Kode\\Disaheim\\DisaheimTest\\DisaheimTest.csproj": {}
+    "C:\\Users\\Justin\\Datamatiker\\Programmering\\Kode\\Disaheim\\DisaheimTest\\DisaheimTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Justin\\Datamatiker\\Kode\\Disaheim\\DisaheimTest\\DisaheimTest.csproj": {
+    "C:\\Users\\Justin\\Datamatiker\\Programmering\\Kode\\Disaheim\\DisaheimTest\\DisaheimTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Justin\\Datamatiker\\Kode\\Disaheim\\DisaheimTest\\DisaheimTest.csproj",
+        "projectUniqueName": "C:\\Users\\Justin\\Datamatiker\\Programmering\\Kode\\Disaheim\\DisaheimTest\\DisaheimTest.csproj",
         "projectName": "DisaheimTest",
-        "projectPath": "C:\\Users\\Justin\\Datamatiker\\Kode\\Disaheim\\DisaheimTest\\DisaheimTest.csproj",
+        "projectPath": "C:\\Users\\Justin\\Datamatiker\\Programmering\\Kode\\Disaheim\\DisaheimTest\\DisaheimTest.csproj",
         "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Justin\\Datamatiker\\Kode\\Disaheim\\DisaheimTest\\obj\\",
+        "outputPath": "C:\\Users\\Justin\\Datamatiker\\Programmering\\Kode\\Disaheim\\DisaheimTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Justin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Justin\\Datamatiker\\Kode\\Disaheim\\Disaheim\\Disaheim.csproj": {
-                "projectPath": "C:\\Users\\Justin\\Datamatiker\\Kode\\Disaheim\\Disaheim\\Disaheim.csproj"
+              "C:\\Users\\Justin\\Datamatiker\\Programmering\\Kode\\Disaheim\\Disaheim\\Disaheim.csproj": {
+                "projectPath": "C:\\Users\\Justin\\Datamatiker\\Programmering\\Kode\\Disaheim\\Disaheim\\Disaheim.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\Justin\\Datamatiker\\Kode\\Disaheim\\Disaheim\\Disaheim.csproj": {
+    "C:\\Users\\Justin\\Datamatiker\\Programmering\\Kode\\Disaheim\\Disaheim\\Disaheim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Justin\\Datamatiker\\Kode\\Disaheim\\Disaheim\\Disaheim.csproj",
+        "projectUniqueName": "C:\\Users\\Justin\\Datamatiker\\Programmering\\Kode\\Disaheim\\Disaheim\\Disaheim.csproj",
         "projectName": "Disaheim",
-        "projectPath": "C:\\Users\\Justin\\Datamatiker\\Kode\\Disaheim\\Disaheim\\Disaheim.csproj",
+        "projectPath": "C:\\Users\\Justin\\Datamatiker\\Programmering\\Kode\\Disaheim\\Disaheim\\Disaheim.csproj",
         "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Justin\\Datamatiker\\Kode\\Disaheim\\Disaheim\\obj\\",
+        "outputPath": "C:\\Users\\Justin\\Datamatiker\\Programmering\\Kode\\Disaheim\\Disaheim\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Justin\\AppData\\Roaming\\NuGet\\NuGet.Config",

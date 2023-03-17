@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace Disaheim
 {
-    public class Amulet
+    //Make Amulet a childclass to the Merchandise parent class
+    public class Amulet : Merchandise
     {
         private Level quality;
 
@@ -18,13 +19,13 @@ namespace Disaheim
            
         }
 
-        private string itemId;
+  //      private string itemId;
 
-		public string ItemId
-		{
-			get { return itemId; }
-			set { itemId = value; }
-		}
+		//public string ItemId
+		//{
+		//	get { return itemId; }
+		//	set { itemId = value; }
+		//}
 
 		private string design;
 
@@ -34,9 +35,8 @@ namespace Disaheim
 			set { design = value; }
         }
 
-        //Amulet constructor
-
-        public Amulet(string itemId, Level quality, string design)
+        //Amulet constructor with keyword to call the itemId's constructor from Merchandise Class
+        public Amulet(string itemId, Level quality, string design) : base(itemId)
         {
             this.itemId = itemId;
             this.quality = quality;
