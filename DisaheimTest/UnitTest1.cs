@@ -54,20 +54,37 @@ namespace DisaheimTest
             Assert.AreEqual("ItemId: 13, Quality: low, Design: Capricorn", a3.ToString());
         }
 
-        [TestMethod]
+        //[TestMethod]
 
-        public void MerchandiseConstructorWorkProperly()
+        //public void MerchandiseConstructorWorkProperly()
 
+        //{
+
+        //    // Arrange
+
+        //    Merchandise m = new Merchandise("100");
+
+        //    // Assert
+
+        //    Assert.AreEqual("ItemId: 100", m.ToString());
+
+        //}
+
+        [TestClass]
+        public class AmuletTests
         {
+            [TestMethod]
+            public void Amulet_CreatesWithItemId()
+            {
+                // Arrange
+                string itemId = "A001";
 
-            // Arrange
+                // Act
+                Amulet amulet = new Amulet(itemId);
 
-            Merchandise m = new Merchandise("100");
-
-            // Assert
-
-            Assert.AreEqual("ItemId: 100", m.ToString());
-
+                // Assert
+                Assert.AreEqual(itemId, amulet.ItemId);
+            }
         }
     }
 }

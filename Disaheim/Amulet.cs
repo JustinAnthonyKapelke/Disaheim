@@ -36,7 +36,7 @@ namespace Disaheim
         }
 
         //Amulet constructor with keyword to call the itemId's constructor from Merchandise Class
-        public Amulet(string itemId, Level quality, string design) : base(itemId)
+        public Amulet(string itemId, Level quality, string design)
         {
             this.itemId = itemId;
             this.quality = quality;

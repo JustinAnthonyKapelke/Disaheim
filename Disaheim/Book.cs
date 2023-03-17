@@ -38,7 +38,7 @@ namespace Disaheim
 		}
 
         //Book constructor with keyword to call the itemId's constructor from Merchandise Class
-        public Book (string itemId, string title, double price) : base (itemId)	
+        public Book (string itemId, string title, double price)
 		{
 			this.itemId = itemId;
 			this.title = title;

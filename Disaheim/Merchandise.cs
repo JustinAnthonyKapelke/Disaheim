@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Disaheim
 {
-    public class Merchandise
+    public abstract class Merchandise
     {
 
         //ItemId property
@@ -16,11 +16,11 @@ namespace Disaheim
             get { return itemId; }
             set { itemId = value; }
         }
-        //Merchandise constructor
-        public Merchandise(string itemId)
-        { 
-            this.itemId = itemId;
-        }
+        ////Merchandise constructor
+        //public Merchandise(string itemId)
+        //{ 
+        //    this.itemId = itemId;
+        //}
 
         //Override to string
         public override string ToString() 
