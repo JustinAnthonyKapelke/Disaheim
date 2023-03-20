@@ -208,3 +208,5 @@ C:\Users\Justin\Datamatiker\Programmering\Kode\Disaheim\DisaheimTest\obj\Debug\n
 C:\Users\Justin\Datamatiker\Programmering\Kode\Disaheim\DisaheimTest\obj\Debug\net6.0\DisaheimTest.pdb
 C:\Users\Justin\Datamatiker\Programmering\Kode\Disaheim\DisaheimTest\obj\Debug\net6.0\DisaheimTest.genruntimeconfig.cache
 C:\Users\Justin\Datamatiker\Programmering\Kode\Disaheim\DisaheimTest\obj\Debug\net6.0\ref\DisaheimTest.dll
+C:\Users\Justin\Datamatiker\Programmering\Kode\Disaheim\DisaheimTest\bin\Debug\net6.0\UtilityLib.dll
+C:\Users\Justin\Datamatiker\Programmering\Kode\Disaheim\DisaheimTest\bin\Debug\net6.0\UtilityLib.pdb

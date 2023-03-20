@@ -75,6 +75,7 @@ namespace DisaheimTest
 
         //}
 
+
         [TestClass]
         public class AmuletTests
         {

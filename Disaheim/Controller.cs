@@ -15,6 +15,8 @@ namespace Disaheim
         // Private field stores a list of Amulet obejcts
         private List<Amulet> amulets = new List<Amulet>();
 
+        // Private field stores a list of Course objects
+        private List<Course> courses = new List<Course>();
 
         //Property Books
         public List<Book> Books
@@ -35,6 +37,15 @@ namespace Disaheim
             }
         }
 
+        //Property Courses
+        
+        public List <Course> Courses
+        {
+            get { return courses; }
+            set { courses = value; }
+        }
+
+
 
         //Create a contructor for the controller class
         public Controller()
@@ -53,7 +64,9 @@ namespace Disaheim
         public void AddToList(Amulet amulet)
         { amulets.Add(amulet); }
 
-
+        //Add course to list method
+        public void AddToList(Course course)
+        { courses.Add(course); }
 
     }
         
