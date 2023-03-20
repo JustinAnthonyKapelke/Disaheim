@@ -40,7 +40,7 @@ namespace Disaheim
         //Book constructor with keyword to call the itemId's constructor from Merchandise Class
         public Book (string itemId, string title, double price)
 		{
-			this.itemId = itemId;
+			this.ItemId = itemId;
 			this.title = title;
 			this.price = price;			
 		}
@@ -61,7 +61,7 @@ namespace Disaheim
         //Override string
         public override string ToString()
         {
-			return $"ItemId: {ItemId}, Title: {Title}, Price: {price}";
+			return $"ItemId: {ItemId}, Title: {title}, Price: {price}";
 		}
 
 

@@ -10,7 +10,7 @@ namespace Disaheim
     {
 
         //ItemId property
-        public string itemId;
+        private string itemId;
         public string ItemId
         {
             get { return itemId; }
