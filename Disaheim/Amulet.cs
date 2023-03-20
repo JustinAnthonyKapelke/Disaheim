@@ -60,11 +60,8 @@ namespace Disaheim
 
         //Override string
         public override string ToString()
-        {
-
-            
+        {                        
             return $"ItemId: {itemId}, Quality: {quality}, Design: {design}";
-            //return $"ItemId: {itemId}, Quality: {quality.ToString().ToLower()}, Design: {design ?? ""}";
         }
 
 
