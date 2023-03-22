@@ -21,7 +21,7 @@ namespace Disaheim
         //Property Books
         public List<Book> Books
         {
-            get 
+            get
             {
                 return books;
             }
@@ -38,8 +38,8 @@ namespace Disaheim
         }
 
         //Property Courses
-        
-        public List <Course> Courses
+
+        public List<Course> Courses
         {
             get { return courses; }
             set { courses = value; }
