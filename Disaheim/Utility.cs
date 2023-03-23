@@ -9,6 +9,44 @@ namespace Disaheim
 {
     public class Utility
     {
+        //LowQualityValue Property
+        private double lowQualityValue = 12.5;
+
+        public double LowQualityValue
+        {
+            get { return lowQualityValue; }
+            set { lowQualityValue = value; }
+        }
+
+        // MediumQualityValue property
+        private double mediumQualityValue = 20.0;
+
+        public double MediumQualityValue
+        {
+            get { return mediumQualityValue; }
+            set { mediumQualityValue = value; }
+        }
+
+        // HighQualityValue property
+        private double highQualityValue = 27.5;
+
+        public double HighQualityValue
+        {
+            get { return highQualityValue; }
+            set { highQualityValue = value; }
+        }
+
+        //CourseHourValue property
+        private double courseHourValue = 875;
+
+        public double CourseHourValue
+        {
+            get { return courseHourValue; }
+            set { courseHourValue = value; }
+        }
+
+
+
         public double GetValueOfMerchandise(Merchandise merchandise)
         {
             if (merchandise is Book)
@@ -23,13 +61,13 @@ namespace Disaheim
                 switch (amulet.Quality)
                 {
                     case Level.low:
-                        value = 12.5;
+                        value = LowQualityValue;
                         break;
                     case Level.medium:
-                        value = 20.0;
+                        value = MediumQualityValue;
                         break;
                     case Level.high:
-                        value = 27.5;
+                        value = HighQualityValue;
                         break;
                 }
                 return value;
@@ -43,11 +81,11 @@ namespace Disaheim
 
 
 
-    // GetValueOfBook method
-    public double GetValueOfBook(Book book)
-        {
-            return book.Price;
-        }
+    //// GetValueOfBook method
+    //public double GetValueOfBook(Book book)
+    //    {
+    //        return book.Price;
+    //    }
 
         //GetValueOfAmulet method
 
@@ -83,7 +121,7 @@ namespace Disaheim
             {
                 hours++;
             }
-            double pricePerHour = 875;
+            double pricePerHour = CourseHourValue;
             double price = pricePerHour * hours;
             return price;
         }

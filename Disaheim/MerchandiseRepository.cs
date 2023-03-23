@@ -28,11 +28,13 @@ namespace Disaheim
             return null;
         }
 
+
+        // GetTotalValue  method
         public double GetTotalValue()
         {
             double totalValue = 0.0;
             Utility utility = new Utility();
-            
+
 
             foreach (Merchandise merchandise in merchandises)
             {
@@ -40,20 +42,21 @@ namespace Disaheim
             }
             return totalValue;
         }
-        
-        
+
+
+
 
     }
     // Return total value of all books in Books
-//        public double GetTotalValue()
-//        { 
-//            // totalValue variable
-//            double totalValue = 0.0;
-//            foreach (Book book in books)
-//            {
-//                totalValue = totalValue + book.Price;
-//            }   
-//            return totalValue;                     
-//        }
-      
+    //        public double GetTotalValue()
+    //        { 
+    //            // totalValue variable
+    //            double totalValue = 0.0;
+    //            foreach (Book book in books)
+    //            {
+    //                totalValue = totalValue + book.Price;
+    //            }   
+    //            return totalValue;                     
+    //        }
+
 }
