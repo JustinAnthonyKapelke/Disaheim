@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,8 +9,42 @@ namespace Disaheim
 {
     public class Utility
     {
-        // GetValueOfBook method
-        public double GetValueOfBook(Book book)
+        public double GetValueOfMerchandise(Merchandise merchandise)
+        {
+            if (merchandise is Book)
+            {
+                Book book = (Book)merchandise;
+                return book.Price;
+            }
+            else if (merchandise is Amulet)
+            {
+                Amulet amulet = (Amulet)merchandise;
+                double value = 0.0;
+                switch (amulet.Quality)
+                {
+                    case Level.low:
+                        value = 12.5;
+                        break;
+                    case Level.medium:
+                        value = 20.0;
+                        break;
+                    case Level.high:
+                        value = 27.5;
+                        break;
+                }
+                return value;
+            }
+            return 0;
+        }
+
+         
+
+
+
+
+
+    // GetValueOfBook method
+    public double GetValueOfBook(Book book)
         {
             return book.Price;
         }

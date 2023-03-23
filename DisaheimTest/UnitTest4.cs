@@ -1,5 +1,4 @@
-﻿
-using Disaheim;
+﻿using Disaheim;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 
@@ -14,16 +13,17 @@ namespace DisaheimTest
         Course c1, c2;
 
         CourseRepository courses;
-        BookRepository books;
-        AmuletRepository amulets;
+        
+        MerchandiseRepository merchandise;
+        Utility utility = new Utility();
 
         [TestInitialize]
         public void Init()
         {
-            // Arrange
-            b1 = new Book("1");
-            b2 = new Book("2", "Falling in Love with Yourself");
-            b3 = new Book("3", "Spirits in the Night", 123.55);
+            //// Arrange
+            //b1 = new Book("1");
+            //b2 = new Book("2", "Falling in Love with Yourself");
+            //b3 = new Book("3", "Spirits in the Night", 123.55);
 
             a1 = new Amulet("11");
             a2 = new Amulet("12", Level.high);
@@ -33,17 +33,16 @@ namespace DisaheimTest
             c2 = new Course("Nuru Massage using Chia Oil", 157);
 
             courses = new CourseRepository();
-            books = new BookRepository();
-            amulets = new AmuletRepository();
+            merchandise = new MerchandiseRepository();
+
 
             // Act
-            books.AddBook(b1);
-            books.AddBook(b2);
-            books.AddBook(b3);
-
-            amulets.AddAmulet(a1);
-            amulets.AddAmulet(a2);
-            amulets.AddAmulet(a3);
+            //merchandise.AddMerchandise(b1);
+            //merchandise.AddMerchandise(b2);
+            //merchandise.AddMerchandise(b3);
+            merchandise.AddMerchandise(a1);
+            merchandise.AddMerchandise(a2);
+            merchandise.AddMerchandise(a3);
 
             courses.AddCourse(c1);
             courses.AddCourse(c2);
@@ -53,13 +52,13 @@ namespace DisaheimTest
         public void TestGetBook()
         {
             // Assert
-            Assert.AreEqual(b2, books.GetBook("2"));
+            Assert.AreEqual(b2, merchandise.GetMerchandise("2"));
         }
         [TestMethod]
         public void TestGetAmulet()
         {
             // Assert
-            Assert.AreEqual(a3, amulets.GetAmulet("13"));
+            Assert.AreEqual(a3, merchandise.GetMerchandise("13"));
         }
         [TestMethod]
         public void TestGetCourse()
@@ -71,13 +70,13 @@ namespace DisaheimTest
         public void TestGetTotalValueForBook()
         {
             // Assert
-            Assert.AreEqual(123.55, books.GetTotalValue());
+            Assert.AreEqual(123.55, merchandise.GetTotalValue());
         }
         [TestMethod]
         public void TestGetTotalValueForAmulet()
         {
             // Assert
-            Assert.AreEqual(60.0, amulets.GetTotalValue());
+            Assert.AreEqual(60.0, merchandise.GetTotalValue());
         }
         [TestMethod]
         public void TestGetTotalValueForCourse()
