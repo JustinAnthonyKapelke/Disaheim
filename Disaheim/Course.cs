@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace Disaheim
 {
-    public class Course
+    public class Course : IValuable
     {
+
+        //CourseHourValue property
+        private static double courseHourValue = 875;
+
+        public static double CourseHourValue
+        {
+            get { return courseHourValue; }
+            set { courseHourValue = value; }
+        }
+
         //Private field name
         private string name;
 
@@ -46,8 +56,22 @@ namespace Disaheim
         //Override to string
         public override string ToString()
         {
-            return $"Name: {name}, Duration in Minutes: {durationInMinutes}";
+            return $"Name: {name}, Duration in Minutes: {durationInMinutes}, Value: {GetValue()}";
 
-        }     
+        }
+
+        //Get value of Course
+        public double GetValue()
+        {
+            double hours = DurationInMinutes / 60;
+            double remainingMinutes = DurationInMinutes % 60;
+            if (remainingMinutes > 0)
+            {
+                hours++;
+            }
+            double pricePerHour = CourseHourValue;
+            double price = pricePerHour * hours;
+            return price;
+        }
     }
 }
