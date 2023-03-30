@@ -11,7 +11,7 @@ namespace Disaheim
     //Make Book a childclass to the Merchandise parent class
 	public class Book : Merchandise
     {
-		
+
 		//private string itemId;
 
 		//public string ItemId

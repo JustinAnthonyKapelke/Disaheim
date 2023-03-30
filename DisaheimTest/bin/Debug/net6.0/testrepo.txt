@@ -1,0 +1,6 @@
+Name: Programming, Duration in Minutes: 500, Value: 7875
+Course; Programming; 500; 875
+ItemId: 123456, Title: C# programming for beginners, Price: 20
+BOG; 123456; C# programming for beginners; 20
+ItemId: 789012, Quality: high, Design: Golden amulet
+AMULET; 789012; Golden amulet; high

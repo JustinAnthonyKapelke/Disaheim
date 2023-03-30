@@ -1,0 +1,6 @@
+ItemId: 001, Title: The Great Gatsby, Price: 9,99
+BOG; 001; The Great Gatsby; 9,99
+ItemId: 002, Quality: medium, Design: Design A
+AMULET; 002; Design A; medium
+Name: Math 101, Duration in Minutes: 60, Value: 875
+Course; Math 101; 60; 875

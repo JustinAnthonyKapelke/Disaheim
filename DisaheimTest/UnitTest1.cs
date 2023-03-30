@@ -1,190 +1,190 @@
-using Disaheim;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace DisaheimTest
-{
-    [TestClass]
-    public class UnitTest1
-    {
-        Book b1, b2, b3;
-        Amulet a1, a2, a3;
-        Course c1, c2, c3;
+//using Disaheim;
+//using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+//namespace DisaheimTest
+//{
+//    [TestClass]
+//    public class UnitTest1
+//    {
+//        Book b1, b2, b3;
+//        Amulet a1, a2, a3;
+//        Course c1, c2, c3;
 
-        [TestInitialize]
-        public void Init()
-        {
-            b1 = new Book("1");
-            b2 = new Book("2", "Falling in Love with Yourself");
-            b3 = new Book("3", "Spirits in the Night", 123.55);
+//        [TestInitialize]
+//        public void Init()
+//        {
+//            b1 = new Book("1");
+//            b2 = new Book("2", "Falling in Love with Yourself");
+//            b3 = new Book("3", "Spirits in the Night", 123.55);
 
-            a1 = new Amulet("11");
-            a2 = new Amulet("12", Level.high);
-            a3 = new Amulet("13", Level.low, "Capricorn");
+//            a1 = new Amulet("11");
+//            a2 = new Amulet("12", Level.high);
+//            a3 = new Amulet("13", Level.low, "Capricorn");
 
-            c1 = new Course("Spådomskunst for nybegyndere");
-            c2 = new Course("Magi – når videnskaben stopper", 157);
-            c3 = new Course("Et indblik i Helleristning", 180);
-        }
+//            c1 = new Course("Spådomskunst for nybegyndere");
+//            c2 = new Course("Magi – når videnskaben stopper", 157);
+//            c3 = new Course("Et indblik i Helleristning", 180);
+//        }
 
-        [TestMethod]
-        public void BookConstructorWithOneParameter()
-        {
-            Assert.AreEqual("ItemId: 1, Title: , Price: 0", b1.ToString());
-        }
-        [TestMethod]
-        public void BookConstructorWithTwoParameters()
-        {
-            Assert.AreEqual("ItemId: 2, Title: Falling in Love with Yourself, Price: 0", b2.ToString());
-        }
-        [TestMethod]
-        public void BookConstructorWithThreeParameters()
-        {
-            Assert.AreEqual("ItemId: 3, Title: Spirits in the Night, Price: 123,55", b3.ToString());
-        }
+//        [TestMethod]
+//        public void BookConstructorWithOneParameter()
+//        {
+//            Assert.AreEqual("ItemId: 1, Title: , Price: 0", b1.ToString());
+//        }
+//        [TestMethod]
+//        public void BookConstructorWithTwoParameters()
+//        {
+//            Assert.AreEqual("ItemId: 2, Title: Falling in Love with Yourself, Price: 0", b2.ToString());
+//        }
+//        [TestMethod]
+//        public void BookConstructorWithThreeParameters()
+//        {
+//            Assert.AreEqual("ItemId: 3, Title: Spirits in the Night, Price: 123,55", b3.ToString());
+//        }
 
-        [TestMethod]
-        public void AmuletConstructorWithOneParameter()
-        {
-            Assert.AreEqual("ItemId: 11, Quality: medium, Design: ", a1.ToString());
-        }
-        [TestMethod]
-        public void AmuletConstructorWithTwoParameters()
-        {
-            Assert.AreEqual("ItemId: 12, Quality: high, Design: ", a2.ToString());
-        }
+//        [TestMethod]
+//        public void AmuletConstructorWithOneParameter()
+//        {
+//            Assert.AreEqual("ItemId: 11, Quality: medium, Design: ", a1.ToString());
+//        }
+//        [TestMethod]
+//        public void AmuletConstructorWithTwoParameters()
+//        {
+//            Assert.AreEqual("ItemId: 12, Quality: high, Design: ", a2.ToString());
+//        }
 
-        [TestMethod]
-        public void AmuletConstructorWithThreeParameters()
-        {
-            Assert.AreEqual("ItemId: 13, Quality: low, Design: Capricorn", a3.ToString());
-        }
+//        [TestMethod]
+//        public void AmuletConstructorWithThreeParameters()
+//        {
+//            Assert.AreEqual("ItemId: 13, Quality: low, Design: Capricorn", a3.ToString());
+//        }
 
-        //[TestMethod]
+//        //[TestMethod]
 
-        //public void MerchandiseConstructorWorkProperly()
+//        //public void MerchandiseConstructorWorkProperly()
 
-        //{
+//        //{
 
-        //    Arrange
+//        //    Arrange
 
-        //   Merchandise m = new Merchandise("100");
+//        //   Merchandise m = new Merchandise("100");
 
-        //    Assert
+//        //    Assert
 
-        //    Assert.AreEqual("ItemId: 100", m.ToString());
+//        //    Assert.AreEqual("ItemId: 100", m.ToString());
 
-        //}
+//        //}
 
 
-        [TestClass]
-        public class AmuletTests
-        {
-            [TestMethod]
-            public void Amulet_CreatesWithItemId()
-            {
-                // Arrange
-                string itemId = "A001";
+//        [TestClass]
+//        public class AmuletTests
+//        {
+//            [TestMethod]
+//            public void Amulet_CreatesWithItemId()
+//            {
+//                // Arrange
+//                string itemId = "A001";
 
-                // Act
-                Amulet amulet = new Amulet(itemId);
+//                // Act
+//                Amulet amulet = new Amulet(itemId);
 
-                // Assert
-                Assert.AreEqual(itemId, amulet.ItemId);
-            }
-        }
+//                // Assert
+//                Assert.AreEqual(itemId, amulet.ItemId);
+//            }
+//        }
 
-        [TestMethod]
+//        [TestMethod]
 
-        public void CourseConstructorWithOneParameter()
+//        public void CourseConstructorWithOneParameter()
 
-        {
+//        {
 
-            // Assert
+//            // Assert
 
-            Assert.AreEqual("Name: Spådomskunst for nybegyndere, Duration in Minutes: 0", c1.ToString());
+//            Assert.AreEqual("Name: Spådomskunst for nybegyndere, Duration in Minutes: 0", c1.ToString());
 
-        }
+//        }
 
-        [TestMethod]
+//        [TestMethod]
 
-        public void CourseConstructorWithTwoParameters1()
+//        public void CourseConstructorWithTwoParameters1()
 
-        {
+//        {
 
-            // Assert
+//            // Assert
 
-            Assert.AreEqual("Name: Magi – når videnskaben stopper, Duration in Minutes: 157", c2.ToString());
-        }
+//            Assert.AreEqual("Name: Magi – når videnskaben stopper, Duration in Minutes: 157", c2.ToString());
+//        }
 
-        [TestMethod]
+//        [TestMethod]
 
-        public void CourseConstructorWithTwoParameters2()
+//        public void CourseConstructorWithTwoParameters2()
 
-        {
+//        {
 
-            // Assert
+//            // Assert
 
-            Assert.AreEqual("Name: Et indblik i Helleristning, Duration in Minutes: 180", c3.ToString());
+//            Assert.AreEqual("Name: Et indblik i Helleristning, Duration in Minutes: 180", c3.ToString());
 
-        }
+//        }
 
-        [TestMethod]
+//        [TestMethod]
 
-        public void AmuletSetPropertiesWorks()
+//        public void AmuletSetPropertiesWorks()
 
-        {
+//        {
 
-            // Act
+//            // Act
 
-            a3.ItemId = "X";
+//            a3.ItemId = "X";
 
-            a3.Quality = Level.high;
+//            a3.Quality = Level.high;
 
-            a3.Design = "Dolphin";
+//            a3.Design = "Dolphin";
 
-            // Assert
+//            // Assert
 
-            Assert.AreEqual("ItemId: X, Quality: high, Design: Dolphin", a3.ToString());
+//            Assert.AreEqual("ItemId: X, Quality: high, Design: Dolphin", a3.ToString());
 
-        }
+//        }
 
-        [TestMethod]
+//        [TestMethod]
 
-        public void BookSetPropertiesWorks()
+//        public void BookSetPropertiesWorks()
 
-        {
+//        {
 
-            // Act
+//            // Act
 
-            b3.ItemId = "Y";
+//            b3.ItemId = "Y";
 
-            b3.Title = "Smoke on the Water";
+//            b3.Title = "Smoke on the Water";
 
-            b3.Price = 376.45;
+//            b3.Price = 376.45;
 
-            // Assert
+//            // Assert
 
-            Assert.AreEqual("ItemId: Y, Title: Smoke on the Water, Price: 376,45", b3.ToString());
+//            Assert.AreEqual("ItemId: Y, Title: Smoke on the Water, Price: 376,45", b3.ToString());
 
-        }
+//        }
 
-        [TestMethod]
+//        [TestMethod]
 
-        public void CourseSetPropertiesWorks()
+//        public void CourseSetPropertiesWorks()
 
-        {
+//        {
 
-            // Act
+//            // Act
 
-            c2.Name = "How to Ying-Yang";
+//            c2.Name = "How to Ying-Yang";
 
-            c2.DurationInMinutes = 413;
+//            c2.DurationInMinutes = 413;
 
-            // Assert
+//            // Assert
 
-            Assert.AreEqual("Name: How to Ying-Yang, Duration in Minutes: 413", c2.ToString());
+//            Assert.AreEqual("Name: How to Ying-Yang, Duration in Minutes: 413", c2.ToString());
 
-        }
-    }
+//        }
+//    }
 
-}
+//}

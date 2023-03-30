@@ -1,0 +1,6 @@
+ItemId: 1234, Title: The Lord of the Rings, Price: 39,95
+BOG; 1234; The Lord of the Rings; 39,95
+ItemId: 5678, Quality: high, Design: Golden Dragon
+AMULET; 5678; Golden Dragon; high
+Name: CSharp, Duration in Minutes: 500, Value: 7875
+Course; CSharp; 500; 875
